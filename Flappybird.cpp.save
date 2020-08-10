@@ -40,7 +40,7 @@ void Plane ()
     struct Plane Pl {400, 100, 0};
 
     int VOLX = 0;
-    
+
     int Speed = 10;
 
     while (1 < 2)
@@ -50,7 +50,7 @@ void Plane ()
 
         int ResaultPetya = GetPixelVOL (Pl, VOLX, BackColor);  //txGetPixel (Pl.x + 152 + VOLX, Pl.y - Pl.v, BackColor);
 
-        //if (ResaultPetya == 1) VOLX = 0;
+        if (ResaultPetya == 1) VOLX = 0;
 
         txAlphaBlend (txDC (), Pl.x, Pl.y - Pl.v, 0, 0, Plane);
 
